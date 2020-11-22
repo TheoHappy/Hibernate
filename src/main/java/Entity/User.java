@@ -1,14 +1,21 @@
 package Entity;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 
+/**
+ * This is User class <br>
+ * <b>It is a model for user </b> <br>
+ * Info about entity <a>https://www.objectdb.com/java/jpa/start/entity</a><br>
+ * @author Theo
+ * @version  1.1
+ * @since 1.0
 
+ * */
 @Entity
+@Data
 @Table(name = "t_user")
 public class User {
     @Id
@@ -19,26 +26,4 @@ public class User {
     @Column(name = "user_name")
     private String userName;
 
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public User() {
-    }
-
-    public User(String userName) {
-        this.userName = userName;
-    }
 }

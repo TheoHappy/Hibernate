@@ -6,10 +6,15 @@ import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
-import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 
-
+/**
+ * This is HibernateSessionFactoryUtil
+ * He has only one task - to create a session factory for our application to work with the database
+ * @author Theo
+ * @version  1.1
+ * @since 1.0
+ */
 public class HibernateSessionFactoryUtil {
     private static final SessionFactory sessionFactory = buildSessionFactory();
 
